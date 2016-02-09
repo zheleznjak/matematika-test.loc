@@ -1,0 +1,33 @@
+	+--------+-----------+--------------------------------------------+---------------------------------+------------------------------------------------------------+------------+
+    Domain 		Method 						URI                    					Name                            				Action                      	   Middleware
+    +--------+-----------+--------------------------------------------+---------------------------------+------------------------------------------------------------+------------+
+    |        | GET|HEAD  | /                                          |                                 | App\Http\Controllers\FilterController@index                |            |
+    |        | GET|HEAD  | api/city                                   | api.city.index                  | App\Http\Controllers\CityController@index                  | web        |
+    |        | POST      | api/city                                   | api.city.store                  | App\Http\Controllers\CityController@store                  | web        |
+    |        | GET|HEAD  | api/city/create                            | api.city.create                 | App\Http\Controllers\CityController@create                 | web        |
+    |        | PUT|PATCH | api/city/{city}                            | api.city.update                 | App\Http\Controllers\CityController@update                 | web        |
+    |        | DELETE    | api/city/{city}                            | api.city.destroy                | App\Http\Controllers\CityController@destroy                | web        |
+    |        | GET|HEAD  | api/city/{city}                            | api.city.show                   | App\Http\Controllers\CityController@show                   | web        |
+    |        | GET|HEAD  | api/city/{city}/edit                       | api.city.edit                   | App\Http\Controllers\CityController@edit                   | web        |
+    |        | POST      | api/country                                | api.country.store               | App\Http\Controllers\CountryController@store               | web        |
+    |        | GET|HEAD  | api/country                                | api.country.index               | App\Http\Controllers\CountryController@index               | web        |
+    |        | GET|HEAD  | api/country/create                         | api.country.create              | App\Http\Controllers\CountryController@create              | web        |
+    |        | GET|HEAD  | api/country/{country}                      | api.country.show                | App\Http\Controllers\CountryController@show                | web        |
+    |        | PUT|PATCH | api/country/{country}                      | api.country.update              | App\Http\Controllers\CountryController@update              | web        |
+    |        | DELETE    | api/country/{country}                      | api.country.destroy             | App\Http\Controllers\CountryController@destroy             | web        |
+    |        | POST      | api/country/{country}/city                 | api.country.city.store          | App\Http\Controllers\Country\CityController@store          | web        |
+    |        | GET|HEAD  | api/country/{country}/city                 | api.country.city.index          | App\Http\Controllers\Country\CityController@index          | web        |
+    |        | GET|HEAD  | api/country/{country}/city/create          | api.country.city.create         | App\Http\Controllers\Country\CityController@create         | web        |
+    |        | GET|HEAD  | api/country/{country}/city/{city}/language | api.country.city.language.index | App\Http\Controllers\Country\City\LanguageController@index | web        |
+    |        | GET|HEAD  | api/country/{country}/edit                 | api.country.edit                | App\Http\Controllers\CountryController@edit                | web        |
+    |        | POST      | api/language                               | api.language.store              | App\Http\Controllers\LanguageController@store              | web        |
+    |        | GET|HEAD  | api/language                               | api.language.index              | App\Http\Controllers\LanguageController@index              | web        |
+    |        | GET|HEAD  | api/language/create                        | api.language.create             | App\Http\Controllers\LanguageController@create             | web        |
+    |        | DELETE    | api/language/{language}                    | api.language.destroy            | App\Http\Controllers\LanguageController@destroy            | web        |
+    |        | PUT|PATCH | api/language/{language}                    | api.language.update             | App\Http\Controllers\LanguageController@update             | web        |
+    |        | GET|HEAD  | api/language/{language}                    | api.language.show               | App\Http\Controllers\LanguageController@show               | web        |
+    |        | GET|HEAD  | api/language/{language}/edit               | api.language.edit               | App\Http\Controllers\LanguageController@edit               | web        |
+    |        | GET|HEAD  | city                                       |                                 | Closure                                                    | web        |
+    |        | GET|HEAD  | country                                    |                                 | Closure                                                    | web        |
+    |        | GET|HEAD  | language                                   |                                 | Closure                                                    | web        |
+    +--------+-----------+--------------------------------------------+---------------------------------+------------------------------------------------------------+------------+
