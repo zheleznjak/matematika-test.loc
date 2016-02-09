@@ -1,0 +1,32 @@
+.center_div {
+    margin: 0 auto;
+    width: 40%;
+}
+
+.filter {
+    text-align: center;
+}
+
+table.table{
+    margin-top: 40px;
+}
+
+body {
+    background-color: white;
+}
+
+thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+h2 {
+    margin-bottom: 40px;
+}
+
+.table > tbody > tr > td {
+    vertical-align: middle;
+}
+.table > tbody > tr > th {
+    vertical-align: middle;
+}
